@@ -57,8 +57,6 @@ You will see new kernel. (UPDATE TEXT HERE)
 ## Check kernel version to be sure.
 ``uname -a``
 
-
-
 ## Install upboard-extras
 ``sudo apt install upboard-extras``
 ``xxx``
@@ -66,15 +64,15 @@ You will see new kernel. (UPDATE TEXT HERE)
 ``./permissiongroups.sh``
 
 after that you need to add the user that needs to access the HAT functionality to the corresponding groups:
-## GPIO
+GPIO
 ``sudo usermod -a -G gpio ${USER}``
-## LEDs
+LEDs
 ``sudo usermod -a -G leds ${USER}``
-## SPI
+SPI
 ``sudo usermod -a -G spi ${USER}``
-## I2C
+I2C
 ``sudo usermod -a -G i2c ${USER}``
-## UART
+UART
 ``sudo usermod -a -G dialout ${USER}``
 
 to apply the permission changes after issuing the previous command a reboot is needed
