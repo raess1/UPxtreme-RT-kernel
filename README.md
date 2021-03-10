@@ -21,7 +21,7 @@ PREEMPT_RT kernel on UP! Xtreme
 
 ``unxz -cd patch-5.4.66-rt38.patch.xz | patch -p1``
 
-``some step here.``
+``make defconfig``
 
 ``xdg-open .config``
 
@@ -39,7 +39,7 @@ PREEMPT_RT kernel on UP! Xtreme
 ## IF ``make`` fails turn off AUFS
 ``CONFIG_AUFS_FS=n``
 
-## Option
+## Optional
 disable the CPU idle state and to set the default CPU frequency governor to performance
 
 ``CONFIG_CPU_IDLE=n``
@@ -48,8 +48,11 @@ disable the CPU idle state and to set the default CPU frequency governor to perf
 
 ``CONFIG_CPU_FREQ_DEFAULT_GOV_PERFORMANCE=y``
 
-## Option isolcpus 
+## Optional isolcpus 
 To check.
+
+
+## Building 
 
 ``make``   (NOTE: You can use “make -jX” option if you have thread support. X is number of core + 1. It will compile faster)
 
