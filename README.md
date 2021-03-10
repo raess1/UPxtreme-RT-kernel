@@ -105,6 +105,11 @@ UART
 to apply the permission changes after issuing the previous command a reboot is needed
 ``sudo reboot``
 
+## i2c test
+``sudo apt install i2c-tools````
+
+``i2cdetect -r -y 5``
+
 
 ## RT-Tests
 ``sudo apt-get install build-essential libnuma-dev``
