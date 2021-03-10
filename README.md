@@ -26,15 +26,15 @@ PREEMPT_RT kernel on UP! Xtreme
 ``xdg-open .config``
 
 ## Apply RT OPTIONS on kernel
-``HIGH_RES_TIMERS=y
+``HIGH_RES_TIMERS=y``
 
-CONFIG_PREEMPT_RT_FULL=y
+``CONFIG_PREEMPT_RT_FULL=y``
 
-CONFIG_HZ_1000=y
+``CONFIG_HZ_1000=y``
 
-CONFIG_HZ=1000
+``CONFIG_HZ=1000``
 
-CONFIG_OF=n``
+``CONFIG_OF=n``
 
 ## IF ``make`` fails turn off AUFS
 ``CONFIG_AUFS_FS=n``
@@ -42,11 +42,11 @@ CONFIG_OF=n``
 ## Option
 disable the CPU idle state and to set the default CPU frequency governor to performance
 
-``CONFIG_CPU_IDLE=n
+``CONFIG_CPU_IDLE=n``
 
-CONFIG_INTEL_IDLE=n
+``CONFIG_INTEL_IDLE=n``
 
-CONFIG_CPU_FREQ_DEFAULT_GOV_PERFORMANCE=y``
+``CONFIG_CPU_FREQ_DEFAULT_GOV_PERFORMANCE=y``
 
 ## Option isolcpus 
 To check.
