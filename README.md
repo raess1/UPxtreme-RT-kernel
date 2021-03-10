@@ -60,6 +60,7 @@ To check.
 
 ## Check new kernel file and update grub boot loader to start Linux with new RT-Kernel
 ``cd /boot``
+
 ``ls``
 
 You will see new kernel. (UPDATE TEXT HERE)
