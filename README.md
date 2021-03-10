@@ -113,12 +113,19 @@ to apply the permission changes after issuing the previous command a reboot is n
 
 ## RT-Tests
 ``sudo apt-get install build-essential libnuma-dev``
+
 ``mkdir ~/rt``
+
 ``cd ~/rt``
+
 ``git clone git://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git``
+
 ``cd rt-tests``
+
 ``git checkout stable/v1.0``
+
 ``make all``
+
 ``make install``
 
 ## Run tests
