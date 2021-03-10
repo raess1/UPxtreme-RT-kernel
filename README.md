@@ -106,6 +106,31 @@ to apply the permission changes after issuing the previous command a reboot is n
 ``sudo reboot``
 
 
+## RT-Tests
+``sudo apt-get install build-essential libnuma-dev``
+``mkdir ~/rt``
+``cd ~/rt``
+``git clone git://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git``
+``cd rt-tests``
+``git checkout stable/v1.0``
+``make all``
+``make install``
+
+## Run tests
+To run one test thread per CPU or per CPU core, each thread on a separate processor, type
+``sudo ./cyclictest -a -t -n -p99``
+
+## Benching from 5.4.0-1-generic #0~upboard2-Ubuntu SMP vs RT
+On a non-realtime system, you may see something like
+
+
+
+
+
+
+
+
+
 
 
 
