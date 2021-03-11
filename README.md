@@ -209,7 +209,8 @@ T: 7 ( 4621) P:99 I:4500 C:   1223 Min:      2 Act:    4 Avg:    4 Max:      21
 
 ``sudo sh  ./rt-test.sh``
 
-![123123](https://user-images.githubusercontent.com/6362413/110855802-20738600-82b7-11eb-8833-236ba2fbd4b0.PNG)
+![cpu8](https://user-images.githubusercontent.com/6362413/110857998-d6d86a80-82b9-11eb-97fb-144272128c3b.PNG)
+
 
 
 ## rt-can-test is to provide an easy way to test the performance of the Linux PREEMPT_RT patches together with CAN
@@ -232,6 +233,8 @@ ip link set can0 up type can \
   dtq 12 dprop-seg 6 dphase-seg1 2 dphase-seg2 7 dsjw 12 \
   restart-ms 1000 fd on
 ```
+
+
 
 
 
