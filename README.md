@@ -1,5 +1,6 @@
 # UPXtreme-RT-kernel
-Custom PREEMPT_RT kernel on UP! Xtreme based on stock UP! kernel hwe-5.4-upboard.
+Custom PREEMPT_RT kernel on UP! Xtreme based on UP! kernel hwe-5.4-upboard.
+Only tested on UP Xtreme i7C1-8565U
 
 ### Disclaimer: use at your own risk!
 
