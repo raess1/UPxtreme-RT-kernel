@@ -226,10 +226,12 @@ T: 7 ( 4621) P:99 I:4500 C:   1223 Min:      2 Act:    4 Avg:    4 Max:      21
 
 ## Configure CAN interface
 
-`ip link set can0 up type can \
+```
+ip link set can0 up type can \
   tq 12 prop-seg 25 phase-seg1 25 phase-seg2 29 sjw 10 \
   dtq 12 dprop-seg 6 dphase-seg1 2 dphase-seg2 7 dsjw 12 \
-  restart-ms 1000 fd on`
+  restart-ms 1000 fd on
+```
 
 
 
