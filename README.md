@@ -193,6 +193,27 @@ T: 6 ( 4620) P:99 I:4000 C:   1376 Min:      1 Act:    4 Avg:    3 Max:      42
 T: 7 ( 4621) P:99 I:4500 C:   1223 Min:      2 Act:    4 Avg:    4 Max:      21
 
 
+## Real time test using latency plot under the stress
+
+``sudo apt install rt-tests stress gnuplot`` 
+
+``mkdir ~/plot``
+
+``cd ~/plot``
+
+``git clone https://github.com/QiayuanLiao/Ubuntu-RT-UP-Board.git``
+
+``cd ~/Ubuntu-RT-UP-Board``
+
+``cd ~/test``
+
+``sudo sh  ./rt-test.sh``
+
+![123123](https://user-images.githubusercontent.com/6362413/110855802-20738600-82b7-11eb-8833-236ba2fbd4b0.PNG)
+
+
+
+
 
 
 
