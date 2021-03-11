@@ -238,6 +238,8 @@ snippet from console output
 ```
 
 # 10ms (100hz)
+``sudo rt-can-test --if can3 --tx 00008001##1420120 -i 10000 -r -v``
+
 snippet from console output 
 ```
 [ 16681.619501] TX: 100##1410100
@@ -249,6 +251,8 @@ snippet from console output
 ```
 
 # 1ms (1000hz)
+``sudo rt-can-test --if can3 --tx 00008001##1420120 -i 1000 -r -v``
+
 snippet from console output 
 ```
 [ 16874.632739] TX: 100##1410100
