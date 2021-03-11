@@ -176,21 +176,7 @@ T: 7 ( 1953) P:99 I:4500 C:   4688 Min:      1 Act:    2 Avg:    4 Max:      123
 
 RT-PREEMPT
 
-T: 0 ( 4614) P:99 I:1000 C:   5507 Min:      1 Act:    3 Avg:    3 Max:      30
-
-T: 1 ( 4615) P:99 I:1500 C:   3671 Min:      1 Act:    4 Avg:    3 Max:      26
-
-T: 2 ( 4616) P:99 I:2000 C:   2753 Min:      1 Act:    6 Avg:    3 Max:      23
-
-T: 3 ( 4617) P:99 I:2500 C:   2202 Min:      2 Act:    6 Avg:    3 Max:      30
-
-T: 4 ( 4618) P:99 I:3000 C:   1835 Min:      2 Act:    7 Avg:    3 Max:      11
-
-T: 5 ( 4619) P:99 I:3500 C:   1573 Min:      1 Act:    5 Avg:    3 Max:      36
-
-T: 6 ( 4620) P:99 I:4000 C:   1376 Min:      1 Act:    4 Avg:    3 Max:      42
-
-T: 7 ( 4621) P:99 I:4500 C:   1223 Min:      2 Act:    4 Avg:    4 Max:      21
+![RT](https://user-images.githubusercontent.com/6362413/110859289-819d5880-82bb-11eb-85ef-bf8effec5ab8.PNG)
 
 
 ## Real time test using latency plot under the stress
