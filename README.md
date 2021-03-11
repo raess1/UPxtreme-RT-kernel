@@ -1,6 +1,8 @@
 # UPxtreme-RT-kernel
 PREEMPT_RT kernel on UP! Xtreme
 
+### Disclaimer: use at your own risk!
+
 ## Lets get started!
 
 ``mkdir ~/kernel``
