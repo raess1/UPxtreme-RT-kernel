@@ -6,6 +6,8 @@ Only tested on UP Xtreme i7C1-8565U
 
 ## Lets get started!
 
+``sudo apt install build-essential fakeroot dpkg-dev perl libssl-dev bc gnupg dirmngr libncurses5-dev libelf-dev flex bison``
+
 ``mkdir ~/kernel``
 
 ``cd ~/kernel``
