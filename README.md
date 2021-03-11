@@ -194,6 +194,7 @@ T: 7 ( 4621) P:99 I:4500 C:   1223 Min:      2 Act:    4 Avg:    4 Max:      21
 
 
 ## Real time test using latency plot under the stress
+Note: adjust CPU cores on line 2 and 11 in rt-test.sh
 
 ``sudo apt install rt-tests stress gnuplot`` 
 
@@ -234,6 +235,7 @@ ip link set can0 up type can \
   dtq 12 dprop-seg 6 dphase-seg1 2 dphase-seg2 7 dsjw 12 \
   restart-ms 1000 fd on
 ```
+
 
 
 
