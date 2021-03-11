@@ -217,7 +217,7 @@ The following tests has been performed on https://www.peak-system.com/PCAN-M-2.4
 Adapter such as the PEAK-CAN-FD use a 80MHz clock. The following timings have been observed to work (from https://github.com/mjbots/moteus/blob/main/docs/reference.md#80-mhz-clock-systems)
 
 ```
-ip link set can0 up type can \
+sudo ip link set can3 up type can \
   tq 12 prop-seg 25 phase-seg1 25 phase-seg2 29 sjw 10 \
   dtq 12 dprop-seg 6 dphase-seg1 2 dphase-seg2 7 dsjw 12 \
   restart-ms 1000 fd on
