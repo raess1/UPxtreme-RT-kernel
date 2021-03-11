@@ -81,7 +81,9 @@ You will see new kernel. (UPDATE TEXT HERE)
 ## Install upboard-extras
 ``sudo apt install upboard-extras``
 
-``xxx``
+``cd ~/temp``
+
+``wget https://github.com/raess1/UPxtreme-RT-kernel/blob/main/permissiongroups.sh``
 
 ``chmod +x permissiongroups.sh``
 
