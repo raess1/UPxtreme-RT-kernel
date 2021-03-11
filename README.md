@@ -112,11 +112,15 @@ to apply the permission changes after issuing the previous command a reboot is n
 
 ## GPIO test
 ``echo 26 > /sys/class/gpio/export``
+
 ``echo out > /sys/class/gpio/gpio26/direction``
+
 ``echo 1 > /sys/class/gpio/gpio26/value``
+
 Should make pin37 output 3.3v (measure)
 
 ``echo 0 > /sys/class/gpio/gpio26/value``
+
 Should make pin37  output 0V (measure)
 
 ## LED test
@@ -124,6 +128,7 @@ Should make pin37  output 0V (measure)
 The UP Board includes 3 LEDs (yellow, green, red) on the underside of the board (underneath the 4 USB2.0 Type-A sockets), which are controlled by the pin control CPLD on the board. As root, you can use the following commands to control the LEDs:
 
 ``echo 1 > /sys/class/leds/upboard\:green\:/brightness``
+
 ``echo 0 > /sys/class/leds/upboard\:green\:/brightness``
 
 ## RT-Tests
