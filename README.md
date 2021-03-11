@@ -200,7 +200,8 @@ Note: adjust CPU cores on line 2 and 11 in rt-test.sh
 
 
 
-## rt-can-test is to provide an easy way to test the performance of the Linux PREEMPT_RT patches together with CAN
+## rt-can-test is to provide an easy way to test the performance of the Linux PREEMPT_RT patches together with CAN.
+The following tests has been performed on https://www.peak-system.com/PCAN-M-2.473.0.html?&L=1 (PCAN-M.2 Four Channel) mounted on UP Xtreme i7C1-8565U (https://up-board.org/up-xtreme/) and transmit CAN message to a moteus r4.5 controller (https://mjbots.com/products/moteus-r4-5) with ID:1
 
 ``cd ~/repos``
 
@@ -212,7 +213,7 @@ Note: adjust CPU cores on line 2 and 11 in rt-test.sh
 
 ``sudo make install``
 
-## Configure CAN interface
+## Configure CAN interface (socket CAN API)
 Adapter such as the PEAK-CAN-FD use a 80MHz clock. The following timings have been observed to work (from https://github.com/mjbots/moteus/blob/main/docs/reference.md#80-mhz-clock-systems)
 
 ```
@@ -221,6 +222,44 @@ ip link set can0 up type can \
   dtq 12 dprop-seg 6 dphase-seg1 2 dphase-seg2 7 dsjw 12 \
   restart-ms 1000 fd on
 ```
+
+# 100 ms (10 Hz)
+``sudo rt-can-test --if can3 --tx 00008001##1420120 -i 100000 -r -v``
+
+snippet from console output
+```
+[ 16719.938193] TX: 100##1410100
+[ 16719.939749] RX: 100##1410100
+[ 16720.038242] TX: 100##1410100
+[ 16720.039670] RX: 100##1410100
+[ 16720.138278] TX: 100##1410100
+[ 16720.139730] RX: 100##1410100
+
+```
+
+# 10ms (100hz)
+snippet from console output 
+```
+[ 16681.619501] TX: 100##1410100
+[ 16681.620853] RX: 100##1410100
+[ 16681.629555] TX: 100##1410100
+[ 16681.630995] RX: 100##1410100
+[ 16681.639611] TX: 100##1410100
+[ 16681.641081] RX: 100##1410100
+```
+
+# 1ms (1000hz)
+snippet from console output 
+```
+[ 16874.632739] TX: 100##1410100
+[ 16874.633044] RX: 100##1410100
+[ 16874.633064] RX: 100##1410100
+[ 16874.633748] TX: 100##1410100
+[ 16874.634755] TX: 100##1410100
+[ 16874.635035] RX: 100##1410100
+```
+
+
 
 
 
