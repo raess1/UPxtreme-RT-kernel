@@ -264,6 +264,18 @@ snippet from console output
 ```
 
 
+## Extras (notes)
+Remove custom kernel
+
+``locate -b -e 5.4.65-rt38+``
+
+remove 
+
+``locate -b -e 5.4.65-rt38+ | xargs -p sudo rm -r``
+
+Update Grub
+
+
 
 
 
