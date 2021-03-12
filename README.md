@@ -292,7 +292,16 @@ remove
 ``ls``
 
 
-# Real-time Optimization
+# Real-time Optimization (to test)
+One of the contributors to latency in the Voluntary Preemption and Preemptible Kernel models are console messages written to a serial console. Serial console messages may be minimized by using the kernel argument quiet. To suppress messages after boot, use the following line to only enable emergency messages: Source (https://developer.toradex.com/knowledge-base/real-time-linux)
+
+``echo 1 > /proc/sys/kernel/printk``
+
+``kernel.printk = 1 4 1 7``
+
+``echo 2 > /proc/sys/vm/overcommit_memory``
+
+``vm.overcommit_memory = 2``
 
 
 
