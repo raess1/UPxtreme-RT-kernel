@@ -208,7 +208,7 @@ Note: adjust CPU cores on line 2 and 11 in rt-test.sh
 
 ``sudo sh  ./rt-test.sh``
 
-![cpu8](https://user-images.githubusercontent.com/6362413/110857998-d6d86a80-82b9-11eb-97fb-144272128c3b.PNG)
+![11111](https://user-images.githubusercontent.com/6362413/110928261-f9549d00-8326-11eb-8fd7-2f6ee0ad353e.PNG)
 
 
 
