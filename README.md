@@ -285,7 +285,14 @@ remove
 
 ``locate -b -e 5.4.65-rt38+ | xargs -p sudo rm -r``
 
-Update Grub
+``sudo update-grub``
+
+``cd /boot/``
+
+``ls``
+
+
+
 
 
 
