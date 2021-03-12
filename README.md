@@ -26,9 +26,17 @@ Only tested on UP Xtreme i7C1-8565U
 
 ``unxz -cd patch-5.4.66-rt38.patch.xz | patch -p1``
 
+1. Copy the .config file from UP! 5.4.0-1-generic kernel
+``cp /boot/config-5.4.0-1-generic .config``
+
+or 
+
+2. 
 ``make defconfig``
 
 ``xdg-open .config``
+
+Optional: (use make menuconfig for gui config)
 
 ## Apply RT OPTIONS on kernel
 ``HIGH_RES_TIMERS=y``
