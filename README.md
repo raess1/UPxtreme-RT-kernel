@@ -39,14 +39,17 @@ or
 
 ---------------------------
 
-``xdg-open .config``
+# Configure the kernel (1 or 2)
 
-Optional: (use make menuconfig for gui config)
+1. ``xdg-open .config`` (text based)
+
+2. ``make menuconfig`` (GUI based)
+
 
 ## Apply RT OPTIONS on kernel
 ``HIGH_RES_TIMERS=y``
 
-``CONFIG_PREEMPT_RT_FULL=y``
+``CONFIG_PREEMPT_RT=y``
 
 ``CONFIG_HZ_1000=y``
 
