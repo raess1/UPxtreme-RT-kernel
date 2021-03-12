@@ -29,11 +29,9 @@ Only tested on UP Xtreme i7C1-8565U
 ---------------------------
 # Create the kernel .config (options 1 or 2)
 
-1. Copy the .config file from UP! 5.4.0-1-generic kernel
-``cp /boot/config-5.4.0-1-generic .config``
+1. ``cp /boot/config-5.4.0-1-generic .config``
 
-2. 
-``make defconfig``
+2. ``make defconfig``
 
 ---------------------------
 
