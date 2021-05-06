@@ -95,6 +95,7 @@ You will see new kernel. (UPDATE TEXT HERE)
 
 ## Install upboard-extras
 ``sudo add-apt-repository ppa:ubilinux/up``
+``sudo apt update``
 
 ``sudo apt install upboard-extras``
 
