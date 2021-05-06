@@ -94,6 +94,8 @@ You will see new kernel. (UPDATE TEXT HERE)
 ``uname -a``
 
 ## Install upboard-extras
+``sudo add-apt-repository ppa:ubilinux/up``
+
 ``sudo apt install upboard-extras``
 
 ``cd ~/temp``
